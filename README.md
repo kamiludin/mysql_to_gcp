@@ -29,4 +29,4 @@ https://www.kaggle.com/datasets/asaniczka/amazon-products-dataset-2023-1-4m-prod
 
 
 ## Article About this Project 
-Medium Article - https://medium.com/@ahmadkamiludin/building-a-real-time-data-pipeline-streaming-and-processing-youtube-comments-from-uefa-euro-afb3c770fdae
+Medium Article - https://medium.com/@ahmadkamiludin/building-a-scalable-data-pipeline-for-amazon-products-with-mysql-google-cloud-dbt-and-looker-ee7f0e265be5
