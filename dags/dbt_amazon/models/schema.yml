@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: amazon
+    dataset: RAW
+    tables:
+      - name: amazon_products
+        identifier: amazon_products
+        columns:
+          - name: asin
+            description: "The Amazon Standard Identification Number (ASIN) of the product. This is a unique identifier or primary key for the product."
+            data_tests:
+              - unique
+              - not_null
+          - name: category_id
+            description: "The category ID of the product. This is a Foreign Key to the categories table."
+            data_tests:
+              - not_null
+      - name: amazon_categories
+        identifier: amazon_categories
+        columns:
+          - name: id
+            description: "The unique identifier or primary key for the category."
+            data_tests:
+              - unique
+              - not_null
+models:
+  - name: int_amazon_joined
+    description: "This table contains the joined data from stg_products and stg_categories (staging models)."
